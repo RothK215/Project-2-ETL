@@ -1,0 +1,32 @@
+DROP TABLE vegan_restaurants
+DROP TABLE fast_food_restaurants
+
+------------ Vegan Restaurants ------------
+CREATE TABLE vegan_restaurants(
+	id INT PRIMARY KEY,
+	name TEXT,
+	categories TEXT,
+	cuisines TEXT,
+	address TEXT,
+	postal_code INT,
+	city TEXT,
+	provice TEXT,
+	country TEXT,
+	latitude FLOAT,
+	longitude FLOAT,
+	websites TEXT
+	)
+
+------------ Fast Food Restaurants ------------
+CREATE TABLE fast_food_restaurants(
+	name TEXT,
+	categories TEXT,
+	address TEXT,
+	city TEXT,
+	postal_code INT,	
+	province TEXT,	
+	country	TEXT,
+	latitude FLOAT,
+	longitude FLOAT,	
+	websites TEXT
+	)
