@@ -20,6 +20,7 @@ https://www.kaggle.com/datasets/san-francisco/sf-restaurant-scores-lives-standar
 =======================================================================================================================
 
 New York Inspection CSV
+
 	The New York csv originally came with 399918 rows with 18 columns. The values in the zip code column containing a decimal place and the address being separated between building number and street. ‘DBA’ represents the name of the establishment, ‘CAMIS’ being the code assigned to the establishment and ‘RECORD DATE’ being the same throughout the data frame.
 •	First started by making a copy of the original data frame so that the original data frame is not manipulate it in any way. 
 •	Next, dropped any duplicates and filled in any missing value under the zipcode column with 0 and defined all the values within that column as integers.
@@ -29,6 +30,7 @@ New York Inspection CSV
 ---
 
 San Francisco Inspection CSV
+
 	The San Francisco csv had 53973 rows with 23 columns. The latitude, longitude, location columns were filled with null values and the inspection_id was a combination of the building id and the inspection date. The violation_id was also a combination of the inspection date along with the violation id. The inspection_date included the timeframe, but all its values were at 0.
 •	First, dropped all duplicate rows and got rid of unnecessary columns. 
 •	The phone numbers within the column contained decimals which signified that the phone numbers were floats, so I turned those into strings to reveal the whole phone number. I later removed the decimals from the values.
@@ -39,6 +41,7 @@ San Francisco Inspection CSV
 ---
 
 Los Angeles Inspection CSV
+
 	The inspection data had 67,573 rows and 20 columns. This data set was already very clean before I was able to make those few edits. The activity_date column contained the time but that was set to 0. There was a column called program_name which is meant to be the name of the restaurant.
 •	Was able to drop the number of rows down to 67,541 rows by removing duplicates and NaN values. 
 •	Updated the date format to remove the hours/minutes/seconds. 
@@ -48,6 +51,7 @@ Los Angeles Inspection CSV
 ---
 
 Los Angeles Violation Data CSV
+
 	The violation data had 313,675 rows and 25 columns. All values were in capital letter format but that didn’t pose an issue. The Violation_description column includes the violation code within the description. Each row in this dataset describes the violation that was found on the establishment. The serial_number column refers to the same serial number as the inspection data data frame.
 •	First the duplicates and NaNs were dropped.
 •	The serial number has duplicates in this dataset because many businesses had multiple violations.
@@ -56,6 +60,7 @@ Los Angeles Violation Data CSV
 ---
 
 Chicago Inspection Data
+
 	Unlike the LA data, the Chicago inspection data included both inspection and violation together. There was a DBA Name and an AKA Name column that both contained the name of the establishment the inspection was taken place, but AKA Name column did contain some null values. The location column contained both the latitude and longitude coordinates for the location even though there exist a latitude and longitude column.
 •	This dataset started with 196,825 rows and 22 columns.
 •	I dropped the duplicates in this dataset.
